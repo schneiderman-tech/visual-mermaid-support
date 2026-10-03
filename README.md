@@ -8,7 +8,7 @@ external network requests of any kind — nothing leaves your Atlassian instance
 
 ## Get help
 
-Open an issue on this repo: **[Issues](https://github.com/nivSchneiderman/visual-mermaid-support/issues)**
+Open an issue on this repo: **[Issues](https://github.com/schneiderman-tech/visual-mermaid-support/issues)**
 
 For anything else: support@schneiderman.tech
 

@@ -4,7 +4,7 @@ Last updated: 2026-09-15
 
 ## Getting help
 
-File a bug report or feature request at: **https://github.com/nivSchneiderman/visual-mermaid-support/issues**
+File a bug report or feature request at: **https://github.com/schneiderman-tech/visual-mermaid-support/issues**
 
 That tracker is monitored and is the single place to check status on an open request.
 
