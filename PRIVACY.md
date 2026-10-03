@@ -51,4 +51,4 @@ policy will be updated before that version ships.
 
 ## Contact
 
-Questions about this policy: niv@schneiderman.tech
+Questions about this policy: support@schneiderman.tech

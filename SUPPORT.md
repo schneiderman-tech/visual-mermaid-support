@@ -27,7 +27,7 @@ following Sunday. "Business days" below means these days.
 
 ## Emergency contact
 
-24×7 emergency contact for critical issues: **niv@schneiderman.tech**
+24×7 emergency contact for critical issues: **support@schneiderman.tech**
 
 ## Uptime and recovery
 
@@ -51,4 +51,4 @@ re-approval will be announced with reasonable notice before it takes effect.
 
 ## Contact
 
-General support: niv@schneiderman.tech
+General support: support@schneiderman.tech
