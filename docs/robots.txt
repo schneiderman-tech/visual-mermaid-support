@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://schneiderman-tech.github.io/visual-mermaid-support/sitemap.xml
