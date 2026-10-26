@@ -21,8 +21,25 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Visual Mermaid: Mermaid code and a live flowchart side by side in Confluence">
 <meta name="twitter:card" content="summary_large_image">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBRE7PYD9C"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GBRE7PYD9C');</script>
+<script>
+/* Analytics only for real people: skip headless browsers and crawlers, and load only after
+   the visitor has actually looked at the page (2s visible, or any scroll/tap). */
+(function(){
+  var ua=navigator.userAgent||"";
+  if(navigator.webdriver||/bot|crawl|spider|slurp|headless|lighthouse|preview|facebookexternalhit|python|curl|wget|httpclient|phantom|puppeteer|playwright/i.test(ua))return;
+  var done=false;
+  function load(){
+    if(done)return;done=true;
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());
+    var p={};try{if(/[?&]me=1/.test(location.search))localStorage.vmInternal="1";if(localStorage.vmInternal==="1")p.traffic_type="internal";}catch(e){}
+    gtag('config','G-GBRE7PYD9C',p);
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-GBRE7PYD9C';document.head.appendChild(g);
+  }
+  ['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});
+  setTimeout(function(){if(document.visibilityState==='visible')load();},2000);
+})();
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
