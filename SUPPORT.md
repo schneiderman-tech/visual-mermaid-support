@@ -1,4 +1,4 @@
-# Support & Service Levels — Visual Mermaid for Confluence
+# Support & Service Levels — Mermaid Diagram Editor for Confluence
 
 Last updated: 2026-09-15
 
@@ -31,7 +31,7 @@ following Sunday. "Business days" below means these days.
 
 ## Uptime and recovery
 
-Visual Mermaid has no vendor-operated backend. It is a static Forge app: all rendering happens
+The app has no vendor-operated backend. It is a static Forge app: all rendering happens
 in the customer's browser, and the only data it touches (diagram source) is stored inside the
 Confluence page itself, not on any server this vendor runs.
 

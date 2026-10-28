@@ -1,6 +1,6 @@
-# Visual Mermaid for Confluence — Docs & Support
+# Mermaid Diagram Editor for Confluence — Docs & Support
 
-Public documentation, support, and privacy policy for **Visual Mermaid for Confluence**, a Forge
+Public documentation, support, and privacy policy for **Mermaid Diagram Editor for Confluence**, a Forge
 app on the Atlassian Marketplace.
 
 Mermaid diagrams as code, stored in your page. Draw it or type it, both in sync. The app makes no

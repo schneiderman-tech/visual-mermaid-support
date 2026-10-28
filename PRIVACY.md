@@ -1,4 +1,4 @@
-# Privacy Policy — Visual Mermaid for Confluence
+# Privacy Policy — Mermaid Diagram Editor for Confluence
 
 Last updated: 2026-09-15
 
@@ -9,7 +9,7 @@ There is nothing for this privacy policy to disclose beyond that.
 
 ## What the app does with your data
 
-Visual Mermaid stores a diagram's source text inside the Confluence macro's own configuration,
+The app stores a diagram's source text inside the Confluence macro's own configuration,
 which lives inside the page it's placed on. That configuration is Confluence page data — it is
 stored, backed up, and access-controlled by Atlassian exactly like the rest of the page, and it
 moves with the page (copy, export, history, deletion) because it never leaves it.

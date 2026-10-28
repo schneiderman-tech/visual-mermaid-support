@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Visual Mermaid: Edit Mermaid Diagrams in Confluence Cloud</title>
+<title>Mermaid Diagram Editor for Confluence Cloud: Edit by Clicking or in Code</title>
 <meta name="description" content="Draw and edit Mermaid diagrams in Confluence Cloud by clicking, with the code kept in sync. No login, runs on Atlassian. Free for up to 10 users.">
 <link rel="canonical" href="https://schneiderman-tech.github.io/visual-mermaid-support/">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -12,14 +12,14 @@
 <link rel="icon" type="image/png" sizes="192x192" href="img/logo-192.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Visual Mermaid">
-<meta property="og:title" content="Visual Mermaid for Confluence Cloud: draw it or type it, both in sync">
+<meta property="og:site_name" content="Mermaid Diagram Editor for Confluence">
+<meta property="og:title" content="Mermaid Diagram Editor for Confluence Cloud: click it or code it, both in sync">
 <meta property="og:description" content="Edit Mermaid diagrams in Confluence by clicking, no syntax needed. Code and canvas stay in sync. Free for up to 10 users.">
 <meta property="og:url" content="https://schneiderman-tech.github.io/visual-mermaid-support/">
 <meta property="og:image" content="https://schneiderman-tech.github.io/visual-mermaid-support/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Visual Mermaid: Mermaid code and a live flowchart side by side in Confluence">
+<meta property="og:image:alt" content="Mermaid Diagram Editor: Mermaid code and a live flowchart side by side in Confluence">
 <meta name="twitter:card" content="summary_large_image">
 <script>
 /* Analytics only for real people: skip headless browsers and crawlers, and load only after
@@ -50,25 +50,25 @@
       "name": "Schneiderman Tech",
       "email": "support@schneiderman.tech",
       "logo": "https://schneiderman-tech.github.io/visual-mermaid-support/img/logo-512.png",
-      "sameAs": ["https://github.com/schneiderman-tech", "https://marketplace.atlassian.com/apps/1154212410/visual-mermaid-for-confluence"]
+      "sameAs": ["https://github.com/schneiderman-tech", "https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence"]
     },
     {
       "@type": "WebSite",
       "@id": "https://schneiderman-tech.github.io/visual-mermaid-support/#site",
       "url": "https://schneiderman-tech.github.io/visual-mermaid-support/",
-      "name": "Visual Mermaid",
+      "name": "Mermaid Diagram Editor for Confluence",
       "publisher": {"@id": "https://schneiderman-tech.github.io/visual-mermaid-support/#org"}
     },
     {
       "@type": "SoftwareApplication",
       "@id": "https://schneiderman-tech.github.io/visual-mermaid-support/#app",
-      "name": "Visual Mermaid Diagrams for Confluence",
-      "alternateName": "Visual Mermaid",
+      "name": "Mermaid Diagram Editor for Confluence",
+      "alternateName": ["Mermaid Diagram Editor", "Mermaid Diagram Editor Diagrams for Confluence"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Diagramming",
       "operatingSystem": "Atlassian Confluence Cloud",
       "url": "https://schneiderman-tech.github.io/visual-mermaid-support/",
-      "downloadUrl": "https://marketplace.atlassian.com/apps/1154212410/visual-mermaid-for-confluence",
+      "downloadUrl": "https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence",
       "image": "https://schneiderman-tech.github.io/visual-mermaid-support/img/logo-512.png",
       "screenshot": "https://schneiderman-tech.github.io/visual-mermaid-support/img/editor.png",
       "description": "A Confluence Cloud app for Mermaid diagrams: draw visually, write code, or paste from AI, and both views stay in sync. No account, nothing leaves Confluence.",
@@ -88,16 +88,16 @@
       "@type": "FAQPage",
       "mainEntity": [
         {"@type": "Question", "name": "Does Confluence Cloud support Mermaid diagrams?",
-         "acceptedAnswer": {"@type": "Answer", "text": "Not natively. Confluence Cloud shows Mermaid code as a plain code block. An app such as Visual Mermaid renders it as a diagram inside the page."}},
+         "acceptedAnswer": {"@type": "Answer", "text": "Not natively. Confluence Cloud shows Mermaid code as a plain code block. An app such as Mermaid Diagram Editor renders it as a diagram inside the page."}},
         {"@type": "Question", "name": "Can I edit a Mermaid diagram in Confluence without knowing the syntax?",
-         "acceptedAnswer": {"@type": "Answer", "text": "Yes. In Visual Mermaid you double-click a box to rename it, click + to add the next step and drag to connect boxes. The Mermaid code is rewritten for you and stays in sync."}},
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes. In Mermaid Diagram Editor you double-click a box to rename it, click + to add the next step and drag to connect boxes. The Mermaid code is rewritten for you and stays in sync."}},
         {"@type": "Question", "name": "How do I convert existing Mermaid code blocks into diagrams?",
          "acceptedAnswer": {"@type": "Answer", "text": "Open the page's ••• menu and choose Render all Mermaid code blocks. Every Mermaid code block on the page becomes a live, editable diagram in one step."}},
         {"@type": "Question", "name": "How do I add a Mermaid diagram to a Confluence page?",
-         "acceptedAnswer": {"@type": "Answer", "text": "Install Visual Mermaid from the Atlassian Marketplace, type /Visual Mermaid on any page, then draw the diagram or paste Mermaid code."}},
+         "acceptedAnswer": {"@type": "Answer", "text": "Install Mermaid Diagram Editor from the Atlassian Marketplace, type /Visual Mermaid (the macro name) on any page, then draw the diagram or paste Mermaid code."}},
         {"@type": "Question", "name": "Is my diagram data sent outside Confluence?",
-         "acceptedAnswer": {"@type": "Answer", "text": "No. Visual Mermaid runs on Atlassian, makes no external network requests and needs no extra account. The diagram source is stored in the page."}},
-        {"@type": "Question", "name": "How much does Visual Mermaid cost?",
+         "acceptedAnswer": {"@type": "Answer", "text": "No. Mermaid Diagram Editor runs on Atlassian, makes no external network requests and needs no extra account. The diagram source is stored in the page."}},
+        {"@type": "Question", "name": "How much does Mermaid Diagram Editor cost?",
          "acceptedAnswer": {"@type": "Answer", "text": "It is free for Confluence Cloud sites with up to 10 users."}}
       ]
     }
@@ -141,24 +141,24 @@ footer{padding:28px 0 44px;color:var(--muted);font-size:14px;border-top:1px soli
 </head>
 <body>
 <header class="wrap top">
-  <a class="brand" href="./"><img src="img/logo-64.png" width="34" height="34" alt="Visual Mermaid logo">Visual Mermaid</a>
-  <a href="https://marketplace.atlassian.com/apps/1154212410/visual-mermaid-for-confluence?utm_source=website&amp;utm_medium=nav">Marketplace →</a>
+  <a class="brand" href="./"><img src="img/logo-64.png" width="34" height="34" alt="Mermaid Diagram Editor logo">Mermaid Diagram Editor</a>
+  <a href="https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence?utm_source=website&amp;utm_medium=nav">Marketplace →</a>
 </header>
 
 <main>
   <div class="wrap hero">
     <div>
       <h1>Edit Mermaid diagrams in Confluence Cloud by clicking</h1>
-      <p class="lead"><strong>Visual Mermaid</strong> is a Confluence Cloud app for Mermaid diagrams: draw visually, write code, or paste from AI, and everything stays in sync. No syntax to learn, no login, nothing leaves Confluence.</p>
-      <a class="cta" href="https://marketplace.atlassian.com/apps/1154212410/visual-mermaid-for-confluence?utm_source=website&amp;utm_medium=hero">Get it free on the Atlassian Marketplace</a>
+      <p class="lead"><strong>Mermaid Diagram Editor for Confluence</strong> (formerly Mermaid Diagram Editor) is a Confluence Cloud app for Mermaid diagrams: draw visually, write code, or paste from AI, and everything stays in sync. No syntax to learn, no login, nothing leaves Confluence.</p>
+      <a class="cta" href="https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence?utm_source=website&amp;utm_medium=hero">Get it free on the Atlassian Marketplace</a>
       <p class="note">Free for up to 10 users · Runs on Atlassian · By Schneiderman Tech</p>
     </div>
-    <div class="shot"><img src="img/editor.png" width="636" height="734" fetchpriority="high" alt="Visual Mermaid editor in Confluence: Mermaid code on the left, live flowchart on the right"></div>
+    <div class="shot"><img src="img/editor.png" width="636" height="734" fetchpriority="high" alt="Mermaid Diagram Editor editor in Confluence: Mermaid code on the left, live flowchart on the right"></div>
   </div>
 
   <section>
     <div class="wrap">
-      <h2>Why teams choose Visual Mermaid</h2>
+      <h2>Why teams choose Mermaid Diagram Editor</h2>
       <div class="grid">
         <div class="card"><h3>Edit by clicking</h3><p>Rename, add, connect and delete boxes on the canvas. Anyone can update a diagram, not just the people who know Mermaid.</p></div>
         <div class="card"><h3>Code stays in sync</h3><p>Every click rewrites the Mermaid source, keeping your comments and order. Edit the text and the canvas redraws.</p></div>
@@ -172,38 +172,38 @@ footer{padding:28px 0 44px;color:var(--muted);font-size:14px;border-top:1px soli
     <div class="wrap split">
       <div>
         <h2>Code or shapes? Keep both</h2>
-        <p>Other tools make you pick: keep the Mermaid code and edit text only, or convert to shapes and lose the code. Visual Mermaid gives you one diagram you can edit both ways.</p>
+        <p>Other tools make you pick: keep the Mermaid code and edit text only, or convert to shapes and lose the code. Mermaid Diagram Editor gives you one diagram you can edit both ways.</p>
         <table>
           <tr><th>Approach</th><th>Edit by clicking</th><th>Keeps Mermaid code</th></tr>
           <tr><td>Code-only Mermaid macros</td><td>No</td><td>Yes</td></tr>
           <tr><td>Convert Mermaid to drawing shapes</td><td>Yes</td><td>No</td></tr>
-          <tr><td><strong>Visual Mermaid</strong></td><td><strong>Yes</strong></td><td><strong>Yes</strong></td></tr>
+          <tr><td><strong>Mermaid Diagram Editor</strong></td><td><strong>Yes</strong></td><td><strong>Yes</strong></td></tr>
         </table>
       </div>
-      <div class="shot"><img src="img/add-box.png" width="1100" height="742" loading="lazy" alt="Adding a box with the + button in Visual Mermaid; the Mermaid code updates automatically"></div>
+      <div class="shot"><img src="img/add-box.png" width="1100" height="742" loading="lazy" alt="Adding a box with the + button in Mermaid Diagram Editor; the Mermaid code updates automatically"></div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
       <h2>Questions</h2>
-      <details open><summary>Does Confluence Cloud support Mermaid diagrams?</summary><p>Not natively. Confluence Cloud shows Mermaid code as a plain code block. An app such as Visual Mermaid renders it as a diagram inside the page.</p></details>
+      <details open><summary>Does Confluence Cloud support Mermaid diagrams?</summary><p>Not natively. Confluence Cloud shows Mermaid code as a plain code block. An app such as Mermaid Diagram Editor renders it as a diagram inside the page.</p></details>
       <details><summary>Can I edit a Mermaid diagram without knowing the syntax?</summary><p>Yes. Double-click a box to rename it, click + to add the next step and drag to connect boxes. The Mermaid code is rewritten for you.</p></details>
       <details><summary>How do I convert existing Mermaid code blocks into diagrams?</summary><p>Open the page's ••• menu and choose <strong>Render all Mermaid code blocks</strong>. Every block becomes a live, editable diagram.</p></details>
-      <details><summary>How do I add a Mermaid diagram to a Confluence page?</summary><p>Install Visual Mermaid from the Atlassian Marketplace, type <strong>/Visual Mermaid</strong> on any page, then draw or paste Mermaid code.</p></details>
+      <details><summary>How do I add a Mermaid diagram to a Confluence page?</summary><p>Install Mermaid Diagram Editor from the Atlassian Marketplace, type <strong>/Visual Mermaid</strong> (the macro name) on any page, then draw or paste Mermaid code.</p></details>
       <details><summary>Is my diagram data sent outside Confluence?</summary><p>No. The app runs on Atlassian, makes no external network requests and needs no extra account.</p></details>
       <details><summary>How much does it cost?</summary><p>Free for Confluence Cloud sites with up to 10 users.</p></details>
-      <p style="margin-top:24px"><a class="cta" href="https://marketplace.atlassian.com/apps/1154212410/visual-mermaid-for-confluence?utm_source=website&amp;utm_medium=faq">Install Visual Mermaid free</a></p>
+      <p style="margin-top:24px"><a class="cta" href="https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence?utm_source=website&amp;utm_medium=faq">Install Mermaid Diagram Editor free</a></p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    Visual Mermaid by Schneiderman Tech · <a href="mailto:support@schneiderman.tech">support@schneiderman.tech</a> ·
+    Mermaid Diagram Editor by Schneiderman Tech · <a href="mailto:support@schneiderman.tech">support@schneiderman.tech</a> ·
     <a href="https://github.com/schneiderman-tech/visual-mermaid-support/issues">Report an issue</a> ·
     <a href="https://github.com/schneiderman-tech/visual-mermaid-support/blob/main/PRIVACY.md">Privacy</a><br>
-    Updated <time datetime="2026-10-25">October 25, 2026</time>. Mermaid is an open-source project; Visual Mermaid is not affiliated with Mermaid or Atlassian.
+    Updated <time datetime="2026-10-29">October 29, 2026</time>. Mermaid is an open-source project; Mermaid Diagram Editor is not affiliated with Mermaid or Atlassian.
   </div>
 </footer>
 </body>
