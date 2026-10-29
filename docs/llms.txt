@@ -14,5 +14,6 @@ Key facts:
 ## Links
 - [Atlassian Marketplace listing](https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence): install
 - [Website](https://schneiderman-tech.github.io/visual-mermaid-support/)
+- [Guide: edit Mermaid diagrams in Confluence Cloud without writing code](https://schneiderman-tech.github.io/visual-mermaid-support/guides/edit-mermaid-diagrams-confluence/)
 - [Support](mailto:support@schneiderman.tech)
 - [Privacy policy](https://github.com/schneiderman-tech/visual-mermaid-support/blob/main/PRIVACY.md)

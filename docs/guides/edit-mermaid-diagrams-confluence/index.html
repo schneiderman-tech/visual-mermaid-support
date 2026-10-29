@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Edit Mermaid Diagrams in Confluence Cloud Without Writing Code</title>
+<meta name="description" content="Confluence Cloud doesn't render Mermaid. Here's how to get live, editable Mermaid diagrams on your pages, and let anyone fix them by clicking.">
+<link rel="canonical" href="https://schneiderman-tech.github.io/visual-mermaid-support/guides/edit-mermaid-diagrams-confluence/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/logo-32.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Edit Mermaid Diagrams in Confluence Cloud Without Writing Code">
+<meta property="og:description" content="Confluence Cloud doesn't render Mermaid. Here's how to get live, editable Mermaid diagrams on your pages, and let anyone fix them by clicking.">
+<meta property="og:url" content="https://schneiderman-tech.github.io/visual-mermaid-support/guides/edit-mermaid-diagrams-confluence/">
+<meta property="og:image" content="https://schneiderman-tech.github.io/visual-mermaid-support/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+/* Analytics only for real people: skip headless browsers and crawlers, and load only after
+   the visitor has actually looked at the page (2s visible, or any scroll/tap). */
+(function(){
+  var ua=navigator.userAgent||"";
+  if(navigator.webdriver||/bot|crawl|spider|slurp|headless|lighthouse|preview|facebookexternalhit|python|curl|wget|httpclient|phantom|puppeteer|playwright/i.test(ua))return;
+  var done=false;
+  function load(){
+    if(done)return;done=true;
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());
+    var p={};try{if(/[?&]me=1/.test(location.search))localStorage.vmInternal="1";if(localStorage.vmInternal==="1")p.traffic_type="internal";}catch(e){}
+    gtag('config','G-GBRE7PYD9C',p);
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-GBRE7PYD9C';document.head.appendChild(g);
+  }
+  ['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});
+  setTimeout(function(){if(document.visibilityState==='visible')load();},2000);
+})();
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Edit Mermaid Diagrams in Confluence Cloud Without Writing Code", "description": "Confluence Cloud doesn't render Mermaid. Here's how to get live, editable Mermaid diagrams on your pages, and let anyone fix them by clicking.", "datePublished": "2026-10-29", "author": {"@type": "Organization", "name": "Schneiderman Tech", "url": "https://schneiderman-tech.github.io/visual-mermaid-support/"}, "publisher": {"@type": "Organization", "name": "Schneiderman Tech"}, "image": "https://schneiderman-tech.github.io/visual-mermaid-support/img/fullscreen-fit.png", "mainEntityOfPage": "https://schneiderman-tech.github.io/visual-mermaid-support/guides/edit-mermaid-diagrams-confluence/"}</script>
+<style>
+body{font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#172b4d;margin:0}
+main{max-width:760px;margin:0 auto;padding:24px 18px 60px}
+header{border-bottom:1px solid #dfe1e6;padding:12px 18px} header a{color:#172b4d;text-decoration:none;font-weight:600}
+h1{font-size:2rem;line-height:1.25} h2{margin-top:2em} a{color:#1f66e5}
+img{max-width:100%;height:auto;border:1px solid #dfe1e6;border-radius:6px;margin:8px 0}
+code{background:#f4f5f7;padding:1px 4px;border-radius:3px}
+.cta{display:inline-block;background:#1f66e5;color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<header><a href="../../"><img src="../../img/logo-32.png" width="20" height="20" alt="" style="border:0;margin:0 6px -4px 0">Mermaid Diagram Editor for Confluence</a></header>
+<main>
+<h1>How to Edit Mermaid Diagrams in Confluence Cloud Without Writing Code</h1>
+<p>Mermaid is the easiest way to keep a diagram next to the docs it explains. A few lines of text become a flowchart, a sequence diagram or an ER diagram, and any AI tool can write them for you.</p>
+<p>Then the diagram lands in Confluence Cloud, and two problems show up:</p>
+<ol>
+<li><strong>Confluence Cloud doesn't render Mermaid.</strong> A Mermaid code block is just text.</li>
+<li><strong>Only people who know the syntax can change it.</strong> The PM who wants to rename one box asks an engineer, or leaves it wrong.</li>
+</ol>
+<h2>The usual workarounds</h2>
+<ul>
+<li><strong>A code block:</strong> the source is on the page, but readers see code, not a diagram.</li>
+<li><strong>An exported image</strong> from <a href="https://mermaid.live">Mermaid Live</a>: it renders, but the image and the code drift apart. Six months later nobody knows where the source is.</li>
+<li><strong>A viewer app:</strong> renders the code, but editing still means editing code.</li>
+</ul>
+<p>None of these lets someone who doesn't know Mermaid fix a diagram.</p>
+<h2>We built an app for this</h2>
+<p><strong>Mermaid Diagram Editor for Confluence</strong> puts the diagram on the page and lets you edit it by clicking or in code. Both stay in sync.</p>
+<ol>
+<li><a href="https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence?utm_source=website&amp;utm_medium=article&amp;utm_campaign=mermaid-tutorial">Install it from the Atlassian Marketplace</a>. Free for up to 10 users.</li>
+<li>On a page, type <strong>/mermaid</strong> and pick the macro. Start from a template or paste your Mermaid (AI output works too).</li>
+<li>Double-click a box to rename it, click <strong>+</strong> to add a step. The code updates by itself.</li>
+</ol>
+<p><img loading="lazy" alt="The editor: Mermaid code on the left, clickable diagram on the right" src="https://schneiderman-tech.github.io/visual-mermaid-support/img/add-box.png" /></p>
+<p>That's it. Readers see the diagram, and clicking it opens full screen with zoom, so big diagrams stay readable.</p>
+<p><img loading="lazy" alt="A large architecture diagram in full screen" src="https://schneiderman-tech.github.io/visual-mermaid-support/img/fullscreen-fit.png" /></p>
+<p><img loading="lazy" alt="The same diagram zoomed in: labels stay sharp" src="https://schneiderman-tech.github.io/visual-mermaid-support/img/fullscreen-zoom.png" /></p>
+<h3>Why teams pick it</h3>
+<ul>
+<li><strong>Anyone can edit.</strong> No Mermaid syntax needed; devs still get clean code.</li>
+<li><strong>No account, nothing leaves Confluence.</strong> It runs on Atlassian's own platform, and the diagram is stored and versioned in the page.</li>
+<li><strong>Fix AI diagrams in seconds.</strong> Paste what ChatGPT or Claude wrote, then click to fix the wrong box instead of re-prompting.</li>
+</ul>
+<p>Good to know: visual editing works on flowcharts. Sequence, ER, Gantt and the other types render and are edited as code.</p>
+<h2>FAQ</h2>
+<p><strong>Does Confluence Cloud support Mermaid natively?</strong>
+No. A Mermaid code block shows as text. You need an app or an exported image.</p>
+<p><strong>Is there a Mermaid live editor inside Confluence?</strong>
+Yes. Ours shows the code and the diagram side by side and updates as you type.</p>
+<p><strong>Does my diagram data leave Confluence?</strong>
+Not with our app. For any other app, check whether it needs an external account or server.</p>
+<hr />
+<p>Questions or a diagram that won't render? Email support@schneiderman.tech.</p>
+<p><a class="cta" href="https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence?utm_source=website&amp;utm_medium=guide">Get it free on the Atlassian Marketplace</a></p>
+</main>
+</body>
+</html>
