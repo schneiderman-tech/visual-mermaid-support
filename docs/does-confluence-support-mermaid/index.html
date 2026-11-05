@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Does Confluence Support Mermaid? (Cloud, 2026)</title>
+<meta name="description" content="No, Confluence Cloud doesn't render Mermaid on its own. Here's how to add live Mermaid diagrams to a page in 3 steps, and why a diagram may not render.">
+<link rel="canonical" href="https://schneiderman-tech.github.io/visual-mermaid-support/does-confluence-support-mermaid/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/logo-32.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Does Confluence Support Mermaid? (Cloud, 2026)">
+<meta property="og:description" content="No, Confluence Cloud doesn't render Mermaid on its own. Here's how to add live Mermaid diagrams to a page in 3 steps, and why a diagram may not render.">
+<meta property="og:url" content="https://schneiderman-tech.github.io/visual-mermaid-support/does-confluence-support-mermaid/">
+<meta property="og:image" content="https://schneiderman-tech.github.io/visual-mermaid-support/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+/* Analytics only for real people: skip headless browsers and crawlers, and load only after
+   the visitor has actually looked at the page (2s visible, or any scroll/tap). */
+(function(){
+  var ua=navigator.userAgent||"";
+  if(navigator.webdriver||/bot|crawl|spider|slurp|headless|lighthouse|preview|facebookexternalhit|python|curl|wget|httpclient|phantom|puppeteer|playwright/i.test(ua))return;
+  var done=false;
+  function load(){
+    if(done)return;done=true;
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());
+    var p={};try{if(/[?&]me=1/.test(location.search))localStorage.vmInternal="1";if(localStorage.vmInternal==="1")p.traffic_type="internal";}catch(e){}
+    gtag('config','G-GBRE7PYD9C',p);
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-GBRE7PYD9C';document.head.appendChild(g);
+  }
+  ['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});
+  setTimeout(function(){if(document.visibilityState==='visible')load();},2000);
+})();
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "Does Confluence Support Mermaid? (Cloud, 2026)", "description": "No, Confluence Cloud doesn't render Mermaid on its own. Here's how to add live Mermaid diagrams to a page in 3 steps, and why a diagram may not render.", "url": "https://schneiderman-tech.github.io/visual-mermaid-support/does-confluence-support-mermaid/", "publisher": {"@id": "https://schneiderman.tech/#org"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Confluence support Mermaid?", "acceptedAnswer": {"@type": "Answer", "text": "No. Confluence Cloud doesn't render Mermaid on its own: Mermaid code pasted into a page shows as a code block. To see the diagram, add a Mermaid app from the Atlassian Marketplace."}}, {"@type": "Question", "name": "Can people who don't know Mermaid edit the diagram?", "acceptedAnswer": {"@type": "Answer", "text": "For flowcharts, yes. Double-click a box to rename it, click + to add a step, and the code updates by itself. Other diagram types (sequence, class, ER, Gantt and more) are edited as code with a live preview."}}, {"@type": "Question", "name": "Does my data leave Confluence?", "acceptedAnswer": {"@type": "Answer", "text": "No. The app runs on Atlassian Forge (\"Runs on Atlassian\"), needs no external account, and the diagram source is stored in the page itself."}}, {"@type": "Question", "name": "Why is my Mermaid diagram not rendering in Confluence?", "acceptedAnswer": {"@type": "Answer", "text": "Usually because it's in a plain code block, which Confluence shows as text. Move the code into a Mermaid macro. If the macro shows an error, check the first line names a diagram type (flowchart TD, sequenceDiagram) and that labels with brackets or quotes are wrapped in double quotes."}}, {"@type": "Question", "name": "Does it work with diagrams written by AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Ask any AI for a Mermaid diagram, paste the code into the macro, and fix any box by clicking it (flowcharts) or in the code."}}]}]}</script>
+<style>
+body{font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#172b4d;margin:0}
+main{max-width:760px;margin:0 auto;padding:24px 18px 60px}
+header{border-bottom:1px solid #dfe1e6;padding:12px 18px} header a{color:#172b4d;text-decoration:none;font-weight:600}
+h1{font-size:2rem;line-height:1.25} h2{margin-top:2em} a{color:#1f66e5}
+img{max-width:100%;height:auto;border:1px solid #dfe1e6;border-radius:6px;margin:8px 0}
+code{background:#f4f5f7;padding:1px 4px;border-radius:3px}
+.cta{display:inline-block;background:#1f66e5;color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<header><a href="../"><img src="../img/logo-32.png" width="20" height="20" alt="" style="border:0;margin:0 6px -4px 0">Mermaid Diagram Editor for Confluence</a></header>
+<main>
+<h1>Does Confluence support Mermaid?</h1>
+<p><strong>Short answer: no.</strong> Confluence Cloud doesn't render Mermaid on its own. Paste Mermaid code into a page and you get a code block with the source in it, not a diagram. To see the diagram, add a Mermaid app from the Atlassian Marketplace.</p>
+<h2>How to add Mermaid diagrams to Confluence Cloud</h2>
+<p>We built an app for this (free for up to 10 users): <a href="https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence?utm_source=website&amp;utm_medium=faq_intro">Mermaid Diagram Editor for Confluence</a>.</p>
+<ol>
+<li>Install it from the Marketplace.</li>
+<li>On a page, type <code>/mermaid</code> and insert the macro.</li>
+<li>Paste your Mermaid code, or write it in the editor. The diagram renders as you type.</li>
+</ol>
+<p>Readers see the rendered diagram and can open it full screen to zoom and pan, so large diagrams stay readable.</p>
+<img src="../img/fullscreen-fit.png" width="1400" height="916" loading="lazy" alt="A Mermaid diagram open full screen in Confluence Cloud">
+<p><a class="cta" href="https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence?utm_source=website&amp;utm_medium=faq_top">Get it free on the Atlassian Marketplace</a></p>
+<h2>Can people who don&#x27;t know Mermaid edit the diagram?</h2><p>For flowcharts, yes. Double-click a box to rename it, click + to add a step, and the code updates by itself. Other diagram types (sequence, class, ER, Gantt and more) are edited as code with a live preview.</p><h2>Does my data leave Confluence?</h2><p>No. The app runs on Atlassian Forge (&quot;Runs on Atlassian&quot;), needs no external account, and the diagram source is stored in the page itself.</p><h2>Why is my Mermaid diagram not rendering in Confluence?</h2><p>Usually because it&#x27;s in a plain code block, which Confluence shows as text. Move the code into a Mermaid macro. If the macro shows an error, check the first line names a diagram type (<code>flowchart TD</code>, <code>sequenceDiagram</code>) and that labels with brackets or quotes are wrapped in double quotes.</p><h2>Does it work with diagrams written by AI?</h2><p>Yes. Ask any AI for a Mermaid diagram, paste the code into the macro, and fix any box by clicking it (flowcharts) or in the code.</p>
+<p><a class="cta" href="https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence?utm_source=website&amp;utm_medium=faq_bottom">Get it free on the Atlassian Marketplace</a></p>
+<p style="color:#5e6c84;font-size:14px">By Schneiderman Tech · <a href="../">Product overview</a> · <a href="../flowcharts-in-confluence/">Flowcharts in Confluence</a> · <a href="mailto:support@schneiderman.tech">support@schneiderman.tech</a></p>
+</main>
+</body>
+</html>
