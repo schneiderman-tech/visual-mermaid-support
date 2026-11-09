@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mermaid Diagrams in Jira: Tell Us If You Want This</title>
+<meta name="description" content="We are considering a Jira version of our Mermaid app. Today it works in Confluence Cloud only. Tell us if you want it in Jira.">
+<link rel="canonical" href="https://schneiderman-tech.github.io/visual-mermaid-support/mermaid-in-jira/">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/logo-32.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mermaid Diagrams in Jira: Tell Us If You Want This">
+<meta property="og:description" content="We are considering a Jira version of our Mermaid app. Today it works in Confluence Cloud only. Tell us if you want it in Jira.">
+<meta property="og:url" content="https://schneiderman-tech.github.io/visual-mermaid-support/mermaid-in-jira/">
+<meta property="og:image" content="https://schneiderman-tech.github.io/visual-mermaid-support/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+/* Analytics only for real people: skip headless browsers and crawlers, and load only after
+   the visitor has actually looked at the page (2s visible, or any scroll/tap). */
+(function(){
+  var ua=navigator.userAgent||"";
+  if(navigator.webdriver||/bot|crawl|spider|slurp|headless|lighthouse|preview|facebookexternalhit|python|curl|wget|httpclient|phantom|puppeteer|playwright/i.test(ua))return;
+  var done=false;
+  function load(){
+    if(done)return;done=true;
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());
+    var p={};try{if(/[?&]me=1/.test(location.search))localStorage.vmInternal="1";if(localStorage.vmInternal==="1")p.traffic_type="internal";}catch(e){}
+    gtag('config','G-GBRE7PYD9C',p);
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-GBRE7PYD9C';document.head.appendChild(g);
+  }
+  ['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});
+  setTimeout(function(){if(document.visibilityState==='visible')load();},2000);
+})();
+</script>
+<style>
+body{font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#172b4d;margin:0}
+main{max-width:760px;margin:0 auto;padding:24px 18px 60px}
+header{border-bottom:1px solid #dfe1e6;padding:12px 18px} header a{color:#172b4d;text-decoration:none;font-weight:600}
+h1{font-size:2rem;line-height:1.25} h2{margin-top:2em} a{color:#1f66e5}
+img{max-width:100%;height:auto;border:1px solid #dfe1e6;border-radius:6px;margin:8px 0}
+code{background:#f4f5f7;padding:1px 4px;border-radius:3px}
+.cta{display:inline-block;background:#1f66e5;color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:600}
+#thanks{display:none;background:#e3fcef;border-radius:6px;padding:12px 16px;margin-top:14px}
+button.cta{border:0;font:inherit;cursor:pointer}
+</style>
+</head>
+<body>
+<header><a href="../"><img src="../img/logo-32.png" width="20" height="20" alt="" style="border:0;margin:0 6px -4px 0">Mermaid Diagram Editor for Confluence</a></header>
+<main>
+<h1>Mermaid diagrams in Jira</h1>
+<p>Write Mermaid text in a Jira issue and see it as a diagram, with click-to-edit for flowcharts. The same app is already live for Confluence Cloud, and the Jira version is <strong>coming soon</strong>.</p>
+<p><button class="cta" id="want" type="button">Get the app for Jira</button></p>
+<div id="thanks">The Jira version isn't released yet. Join the waitlist and we'll email you the day it is:<br><br>
+<a class="cta" id="join" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSf9w8SBl-78e5NfKWpOMp-fJJ4gqfxuG3eC7hSa96e4R6Y5yg/viewform">Join the waitlist</a>
+<p style="margin:12px 0 0;font-size:15px">Need it today? The Confluence version is live and free for up to 10 users: <a href="https://marketplace.atlassian.com/apps/1154212410/mermaid-diagram-editor-for-confluence?utm_source=website&amp;utm_medium=jira_interest">Mermaid Diagram Editor for Confluence</a>.</p></div>
+<h2>What it will do</h2>
+<ul>
+<li>Show a Mermaid diagram inside a Jira issue, from text stored in the issue.</li>
+<li>Open it full screen with zoom and pan.</li>
+<li>Click-to-edit for flowcharts, as in Confluence.</li>
+</ul>
+<p style="color:#5e6c84;font-size:14px">By Schneiderman Tech · <a href="../">Product overview</a> · <a href="mailto:support@schneiderman.tech">support@schneiderman.tech</a></p>
+<script>
+function ev(n){try{if(window.gtag)gtag('event',n);else{window.dataLayer=window.dataLayer||[];dataLayer.push(['event',n]);}}catch(e){}}
+document.getElementById('want').addEventListener('click',function(){ev('jira_interest_click');this.style.display='none';document.getElementById('thanks').style.display='block';});
+document.getElementById('join').addEventListener('click',function(){ev('jira_waitlist_click');});
+</script>
+</main>
+</body>
+</html>
